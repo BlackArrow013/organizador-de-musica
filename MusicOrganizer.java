@@ -59,4 +59,14 @@ public class MusicOrganizer
             files.remove(index);
         }
     }
+    
+    /**
+     * Comprueba que el índice introducido es válido.
+     */
+    public void checkIndex(int valorAIntroducir)
+    {
+        if (valorAIntroducir < 0 || valorAIntroducir > (files.size()-1)) {
+            System.out.println("Introduzca un valor comprendido entre 0 y " + (files.size()-1));
+        }
+    }
 }
