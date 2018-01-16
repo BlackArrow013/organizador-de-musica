@@ -69,4 +69,16 @@ public class MusicOrganizer
             System.out.println("Introduzca un valor comprendido entre 0 y " + (files.size()-1));
         }
     }
+    
+    /**
+     * Versión alternativa de checkIndex.
+     */
+    public boolean checkIndex2(int valorAIntroducir)
+    {
+        boolean aDevolver = true;
+        if (valorAIntroducir < 0 || valorAIntroducir > (files.size()-1)) {
+            aDevolver = false;
+        }
+        return aDevolver;
+    }
 }
